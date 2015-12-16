@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="scripts/angular.js"></script>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <form ng-app="" name="myform">
+        <input type="text" ng-model="mytext" name="input" required/>
+        <span ng-show="myform.input.$valid">true</span>
+        <span ng-show="myform.input.$dirty">modified</span>
+        <span ng-show="myform.input.$touched">focus</span>
+    </form>
+</body>
+</html>

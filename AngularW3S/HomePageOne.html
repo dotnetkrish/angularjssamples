@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<!--ng-app -> defines the angular js application-->
+<html>
+<head>
+    <title></title>
+    <script src="scripts/angular.js"></script>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div ng-app="" ng-init="name='Hi'">
+        <!--ng-init -> initializes the models ( ng-model)-->
+        <!--ng-model -> binds the data from the html controls to the data -->
+        <p> Name : <input type="text" ng-model="name" /></p>
+
+        <p>My First Expression {{5+5}}</p>
+
+        <p ng-bind="name"></p>
+    </div>
+
+</body>
+</html>

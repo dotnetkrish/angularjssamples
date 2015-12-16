@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="scripts/angular.js"></script>
+	<meta charset="utf-8" />
+    <script>
+        var app = angular.module("myapp", []);
+    </script>
+</head>
+<body>
+<div ng-app="">
+    <form name="myform">
+        email : <input type="email" name="myaddress" ng-model="text" />
+        <span ng-show="myform.myaddress.$error.email">not a valid email</span>
+    </form>
+</div>
+</body>
+</html>

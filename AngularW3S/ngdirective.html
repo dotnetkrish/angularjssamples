@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+	<meta charset="utf-8" />
+    <script src="scripts/angular.min.js"></script>
+    <script>
+        var app = angular.module("myapp", []);
+        app.directive("mydirective", function () {
+            return {
+                template: "This is a custom template designed by me"
+            };
+        })
+    </script>
+</head>
+<body>
+    <div ng-app="myapp" mydirective></div>
+</body>
+</html>

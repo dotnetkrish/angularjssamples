@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="scripts/angular.js"></script>
+    <script>
+        var app = angular.module("myapp", []);
+    </script>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div ng-app="myapp" ng-init="lastname='john'">
+        <p> {{lastname | uppercase}}</p>
+        <p> {{lastname | lowercase}}</p>
+    </div>
+
+    AngularJS Filters
+
+    AngularJS filters can be used to transform data:<br/>
+    <b> Filter 	|     Description</b><br />
+    currency 	| Format a number to a currency format.<br />
+    filter 	    | Select a subset of items from an array.<br />
+    lowercase 	| Format a string to lower case.<br />
+    orderBy 	| Orders an array by an expression.<br />
+    uppercase 	| Format a string to upper case.<br />
+</body>
+</html>
